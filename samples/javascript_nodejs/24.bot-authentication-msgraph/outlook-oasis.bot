@@ -1,0 +1,18 @@
+{
+    "name": "outlook-oasis",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "appId": "5c029e5f-02b1-4f6b-8980-37dceb3ef4d1",
+            "appPassword": "outlookAssistant2019",
+            "endpoint": "http://localhost:3978/api/messages",
+            "id": "69b4bf20-ad9b-11e9-8d0d-2dae4e84fc56",
+            "name": "http://localhost:3978/api/messages"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "overrides": null,
+    "path": "C:\\Users\\Administrator\\Downloads\\BotBuilder-Samples\\samples\\javascript_nodejs\\24.bot-authentication-msgraph\\outlook-oasis.bot"
+}
