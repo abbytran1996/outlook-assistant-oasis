@@ -14,8 +14,8 @@ require('dotenv').config({ path: ENV_FILE });
 
 // Create the adapter. See https://aka.ms/about-bot-adapter to learn more adapters.
 const adapter = new BotFrameworkAdapter({
-    appId: process.env.MicrosoftAppId,
-    appPassword: process.env.MicrosoftAppPassword
+    appId: null,
+    appPassword: null
 });
 
 // Catch-all for errors.
@@ -23,6 +23,7 @@ adapter.onTurnError = async (context, error) => {
     // This check writes out errors to console log.
     // NOTE: In production environment, you should consider logging this to Azure
     //       application insights.
+    console.log(process.env)
     console.error(`\n [onTurnError]: ${ error }`);
     // Send a message to the user.
     await context.sendActivity(`Oops. Something went wrong!`);
